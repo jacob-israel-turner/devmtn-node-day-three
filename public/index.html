@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='eightBall'>
+<head>
+
+</head>
+<body ng-controller='mainCtrl'>
+  <h1>Hello, world!</h1>
+  <form ng-submit='submitQuestion()'>
+    <input type='text' ng-model='question'>
+    <input value='Ask!' type='submit'>
+    <div>{{fortune}}</div>
+  </form>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js'></script>
+  <script src='app.js'></script>
+  <script src='controllers/main-control.js'></script>
+  <script src='services/eight-ball-service.js'></script>
+</body>
+</html>
